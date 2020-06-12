@@ -1,0 +1,74 @@
+body {
+	background: url(../resource/img/7.jpg) no-repeat fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper::after{
+	content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	left: 5%;
+	background-color: #A31F34;
+	z-index: 9999;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.nav .portrait {
+	width: 140px;
+	height: 140px;
+	/*border: solid 2px #fff;*/
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 35px;
+	overflow: hidden;
+}
+
+.nav .portrait img {
+	height: 100%
+}
+
+.nav .author {
+	color: #fff;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+.nav .author .name {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.nav .author .intention {
+	margin-top: 20px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.nav .menu {
+	margin: 35px 0 0 0;
+}
+
+.nav .menu ul li{
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing: 4px;
+	padding: 23px 0;
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+	border-image: radial-gradient(circle,#fff, #A31F34) 1;
+}
+
