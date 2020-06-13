@@ -87,22 +87,27 @@ body {
 
 .nav .menu ul li{
 	padding: 23px 0;
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing: 4px;
 	border-bottom: 2px solid rgba(255,255,255,0.5);
 	border-image: radial-gradient(circle,#fff, #A31F34) 1;
 }
 
-.nav .menu ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.2em;
-	letter-spacing: 4px;
+.nav .menu ul li.active {
+	background-color: #fff;
+	color: #A31F34;
+}
+
+.nav .menu ul li:hover {
+	background-color: #fff;
+	color: #A31F34;
 }
 
 .contain {
 	position: absolute;
 	right: 5%;
 	width: 65%;
-	height: 1600px;
 	color: #fff;
 	padding: 60px 15px;
 }

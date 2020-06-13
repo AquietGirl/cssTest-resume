@@ -19,17 +19,17 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<li><a href="">教育背景</a></li>
-					<li><a href="">项目经验</a></li>
-					<li><a href="">实习经历</a></li>
-					<li><a href="">获奖情况</a></li>
-					<li><a href="">自我评价</a></li>
+					<a href="#edu"><li class="active">教育背景</li></a>
+					<a href="#pro"><li>项目经验</li></a>
+					<a href="#intern"><li>实习经历</li></a>
+					<a href="#awark"><li>获奖情况</li></a>
+					<a href="#me"><li>自我评价</li></a>
 				</ul>
 			</div>
 		</div>
-		<div class="contain">
+		<div class="contain" id="contain">
 			<div class="edu">
-				<p class="title">教育背景</p>
+				<a name="edu"><p class="title">教育背景</p></a>
 				<div class="under-line"></div>
 				<div class="edu-contain">
 					<div class="edu-left">
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="pro">
-				<p class="title">项目经验</p>
+				<a name="pro"><p class="title">项目经验</p></a>
 				<div class="under-line"></div>
 				<div class="pro-contain">
 					<div class="pro-detail">
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 			<div class="intern">
-				<p class="title">实习经历</p>
+				<a name="intern"><p class="title">实习经历</p></a>
 				<div class="under-line"></div>
 				<div class="intern-contain">
 					<div class="intern-contain-detail">
@@ -111,16 +111,16 @@
 				</div>
 			</div>
 			<div class="awark">
-				<p class="title">获奖情况</p>
+				<a name="awark"><p class="title">获奖情况</p></a>
 				<div class="under-line"></div>
 				<img src="resource/img/微词云.png">
 			</div>
 			<div class="me">
-				<p class="title">自我评价</p>
+				<a name="me"><p class="title">自我评价</p></a>
 				<div class="under-line"></div>
 				<div class="me-contain">
 					<ul>
-						<li>熟悉html、css、JavaScript和Vue框架，掌握小程序与云开发，了解spring boot</li>
+						<li>熟悉html、css、JavaScript、Java和Vue框架，掌握小程序与云开发，了解spring boot</li>
 						<li>会Photoshop，做过活动邀请函和海报</li>
 						<li>具有良好的合作精神和沟通能力，在校期间担任班级团支书和学生助理，并且在大学期间光荣入党</li>
 					</ul>
@@ -129,4 +129,31 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	var navli = document.querySelectorAll(".nav .menu li");
+	var contain = document.getElementById('contain');
+	var containChild = contain.children;
+
+	for (var i = 0; i < navli.length; i++) {
+		navli[i].onclick = function () {
+			// body...
+			for (var j = 0; navli.length; j++) {
+				navli[j].className = "";
+			}
+			this.className = "active";
+		}
+	}
+	window.onscroll = function(){
+	    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+	    debugger;
+	    for (var i = 0; i < containChild.length; i++) {
+	        if( scrollTop + 480 >= containChild[i].offsetTop) {
+	            for( var j=0; j<navli.length; j++) {
+	                navli[j].className = "";
+	            }
+	            navli[i].className = "active";
+	       }
+	    }
+	};
+</script>
 </html>
