@@ -113,7 +113,7 @@ body {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.contain .edu .edu-contain {
+.edu .edu-contain {
 	display: flex;
 	justify-content: space-between;
 	margin: 100px 0;
@@ -149,7 +149,7 @@ body {
 
 .pro .pro-contain {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 100px 0;
 }
 
@@ -170,16 +170,79 @@ body {
 
 .pro .pro-contain .pro-detail ul li{
 	text-align: left;
-	padding: 20px 10px;
+	padding: 25px 10px;
 	line-height: 30px;
 }
 
 .pro .pro-contain .pro-detail ul li span {
 	display: inline-block;
-	color: #A31F30;
-	margin-right: 20px;
+	margin-right: 15px;
 	padding: 0 10px;
-	font-weight: bolder;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #A31F30;
 	border-radius: 20px;
+}
+
+.intern .intern-contain .intern-contain-detail{
+	display: flex;
+	justify-content: space-between;
+	margin: 100px 0;
+	text-align: left;
+	line-height: 30px;
+}
+
+.intern .intern-contain .intern-contain-detail > div {
+	width: 48%;
+}
+
+.intern .intern-contain .intern-contain-detail .year {
+	font-size: 1.8em;
+	color: #A31F34;
+	font-weight: bolder;
+}
+
+
+.intern .intern-contain .intern-contain-detail .intern-contain-title{
+	font-size: 1.3em;
+	letter-spacing: 2px;
+}
+
+.intern .intern-contain .intern-contain-detail .duty {
+	font-style: italic;
+}
+
+.intern .intern-contain .intern-contain-detail .duty img{
+	margin: 10px 10px 10px 0;
+	width: 25px;
+	vertical-align: middle;
+}
+
+.intern .intern-contain .intern-contain-detail ul li{
+	list-style-type: disc;
+	margin: 0 20px;
+}
+
+.intern .intern-contain .intern-contain-detail .job {
+	margin-right: 15px;
+	padding: 5px 15px;
+	background-color: #A31F30;
+	border-radius: 20px;
+}
+
+.awark img {
+	width: 80%;
+	margin: 50px 0;
+}
+
+.me .me-contain{
+	margin: 100px 0;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 30px;
+	padding: 0 50px;
+	letter-spacing: 2px;
+}
+
+.me .me-contain ul li {
+	list-style-type: disc;
+	padding: 10px 0;
 }
